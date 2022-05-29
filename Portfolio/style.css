@@ -1,0 +1,207 @@
+* {
+    padding: 0px ;
+    margin: 0px ;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+#formres{
+    margin: auto;
+    width: 40%;
+} 
+
+#contact{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+    
+.size{
+    font-size: 1.5em;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.ff_submit_btn_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.brand-logo {
+    margin: .7em;
+    width: 5em;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #81b8da;
+    color: #000;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    padding: 1rem;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 40px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.footercontainer{
+    padding-top:1.5em;
+    height: 6em;
+    width: 100%;
+    background-color: #81b8da;
+
+}
+
+
+.socials{
+    display: flex;
+    justify-content: center;
+}
+
+
+.fa-github{
+    padding-right: 40px;
+    font-size: 2em;
+}
+
+
+
+.fa-brands{
+color: black;
+font-size: 2em;
+
+}
+
+.icon-size {
+    font-size: 5em;
+}
+
+.artic img{
+    width: 8em;
+    aspect-ratio: 16/9;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .navbar{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .icon-size {
+        font-size: 3em;
+    }
+
+    .artic a{
+        position: absolute;
+        width: 25em;
+        text-decoration: none;
+    }
+    
+    
+    .artic img{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+ 
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        position: absolute;
+        top: 7.4em;
+        height: 10em;
+        background-color: #81b8da ;
+        z-index: 999;
+        display: flex;
+        margin-left: -0.5em;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+    #formres{
+        margin: auto;
+        width: 90%;
+    } 
+}
